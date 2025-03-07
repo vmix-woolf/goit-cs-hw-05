@@ -18,3 +18,7 @@ logging process
 ![logging.png](task01/results/logging.png)
 
 ## Task02 ##
+run:
+`python task02/main.py`
+
+![map_reduce.png](task02/map_reduce.png)
