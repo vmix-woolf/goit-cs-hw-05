@@ -25,7 +25,7 @@ async def copy_file(file_path: AsyncPath, output_folder: AsyncPath):
 async def read_folder(initial_folder: AsyncPath, output_folder: AsyncPath):
     """Асинхронно читає всі файли у вихідній директорії та її підпапках."""
     tasks = []
-    async for file_path in source_folder.glob('**/*'):
+    async for file_path in initial_folder.glob('**/*'):
         if await file_path.is_file():
             tasks.append(copy_file(file_path, output_folder))
 
